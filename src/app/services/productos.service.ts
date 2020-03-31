@@ -33,7 +33,7 @@ private cargarProductos(){
 
   getProducto( id: string ){
 
-   return  this.http.get(`https://angular-html-3a360.firebaseio.com/productos/${ id }.json`)
+   return  this.http.get(' https://angular-html-3a360.firebaseio.com/productos/${ id }.json')
    
   }
   buscarProducto( termino: string) {
@@ -55,7 +55,7 @@ private cargarProductos(){
   private filtrarProductos ( termino: string) {
     
     
-    // console.log(this.productos);
+    console.log(this.productos);
     this.productosFiltrado =[];
 
     termino = termino.toLocaleLowerCase();
